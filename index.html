@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bartosz Zielinski</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+</head>
+<body>      
+    <!-- MENU SECTION -->
+    <!-- Menu buttons have "menuitem" class and use onclick function -->
+    <div class="header">
+        <div class="menuitem">
+            <h2 class="menutitle">Bartosz Zielinski</h2>
+        </div>
+        <div class="menuitem">
+            <button class="menubtn" onclick="url('/index.html')">Main page</button>
+        </div>
+        <div class="menuitem">
+            <button class="menubtn" onclick="url('/about.html')">About me</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+                <a href="/projects/project-1/index.html">Basics of HTML/CSS</a>
+                <a href="/projects/project-2/index.html">Div, Flexbox & CSS</a>
+                <a href="/projects/project-3/index.html">Position</a>
+                <a href="/projects/project-4/index.html">Javascript Calculator</a>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <!-- Here is the main content of this page, i can easily add new content here by adding div with "content-item" class -->
+    <div class="content">
+        <div class="main-content">
+            <div class="content-item">
+                <h1>Portfolio</h1>
+                <p>This website is my portfolio, it was the first project i had to create in webbutveckling.</p>
+                <p class="content-date">2022-09-28</p>
+            </div>
+            <div class="content-item">
+                <h1>Position</h1>
+                <p>This was my third assignment. I had to create a website with centered content.</p>
+                <div class="content-image">
+                    <img src="/images/assignment03-screenshot01.png" alt="Sceenshot of my third assignment">
+                </div>
+                <div class="content-image">
+                    <img src="/images/assignment03-screenshot02.png" alt="Sceenshot of my third assignment">
+                </div>
+                <p class="content-date">2022-09-28</p>
+            </div>
+            <div class="content-item">
+                <h1>Div, Flexbox & CSS</h1>
+                <p>This was my second assignment, i needed to use Flexbox and an outside .css file.</p>
+                <div class="content-image">
+                    <img src="/images/assignment02-screenshot01.png" alt="Screenshot of my second assignment">
+                </div>
+                <p class="content-date">2022-09-28</p>
+            </div>
+            <div class="content-item"> 
+                <h1>Basics of HTML/CSS</h1>
+                <p>This was my first assignment. I had to make a basic html website and i needed to use css. You can see all my projects by using the Projects button.</p>
+                <div class="content-image">
+                    <img src="/images/assignment01-screenshot01.png" alt="Screenshot of my first assignment">
+                </div>
+                <div class="content-image">
+                    <img src="/images/assignment01-screenshot02.png" alt="Screenshot of my first assignment">
+                </div>
+                <p class="content-date">2022-09-28</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

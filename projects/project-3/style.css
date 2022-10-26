@@ -1,0 +1,62 @@
+
+/*
+Color palette
+Background: #E6E0CF
+Titlebar: #99917A
+Div: #A9E8D6
+
+
+
+*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    color: black;
+}
+
+.parent {
+    background-color: #F2ECDA;
+    position: relative;
+    height: 200vh;
+}
+
+#titlebar {
+    background-color: #99917A;
+    left: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: auto;
+    align-items: left;
+    display:flex;
+}
+
+.titlebaritem {
+    transition: 0.2s;
+    width: 100px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+
+
+#titlebaritem:hover {
+    background-color: #F2ECDA;
+    color: black;
+    border-radius: 10%;
+}
+
+#titlebar h1{
+    text-align: center;
+}
+
+.child {
+    background-color: #E6E0CF;
+    left: 25%;
+    width: 50%;
+
+    position: relative;
+    top:0;
+}

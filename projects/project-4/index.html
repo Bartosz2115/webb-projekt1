@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font from fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body onload="update()">
+    <div class="content">
+        <div class="calculator">
+            <div class="screen">
+                <p id="screen-text-error"></p>
+                <p id="screen-text"></p>
+            </div>  
+            <!-- → -->  
+            <div class="keypad">
+                <button class="keypad-button currency" onclick="currencyCalc('usdToEur')">$→€</button>    
+                <button class="keypad-button currency" onclick="currencyCalc('sekToUsd')"><span>sek</span>→$</button>    
+                <button class="keypad-button currency" onclick="currencyCalc('sekToEur')"><span>sek</span>→€</button>
+                <button class="keypad-button" disabled></button>
+                <button class="keypad-button currency" onclick="currencyCalc('eurToUsd')">€→$</button>
+                <button class="keypad-button currency" onclick="currencyCalc('usdToSek')">$→<span>sek</span></button>
+                <button class="keypad-button currency" onclick="currencyCalc('eurToSek')">€→<span>sek</span></button>
+                <button class="keypad-button" onclick="sum()">=</button>
+                <button class="keypad-button" onclick="addUnit('1')">1</button>
+                <button class="keypad-button" onclick="addUnit('2')">2</button>
+                <button class="keypad-button" onclick="addUnit('3')">3</button>
+                <button class="keypad-button" onclick="addUnit('+')">+</button>
+                <button class="keypad-button" onclick="addUnit('4')">4</button>
+                <button class="keypad-button" onclick="addUnit('5')">5</button>
+                <button class="keypad-button" onclick="addUnit('6')">6</button>
+                <button class="keypad-button" onclick="addUnit('-')">-</button>
+                <button class="keypad-button" onclick="addUnit('7')">7</button>
+                <button class="keypad-button" onclick="addUnit('8')">8</button>
+                <button class="keypad-button" onclick="addUnit('9')">9</button>
+                <button class="keypad-button" onclick="addUnit('*')">*</button>
+                <button class="keypad-button" onclick="screenClear()">C</button>
+                <button class="keypad-button" onclick="addUnit('0')">0</button>
+                <button class="keypad-button" onclick="addUnit('.')">.</button>
+                <button class="keypad-button" onclick="addUnit('/')">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

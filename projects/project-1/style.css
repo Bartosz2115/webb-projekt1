@@ -1,0 +1,43 @@
+
+h1 {
+    font-size: 52px;
+    font-family: monospace;
+}
+        
+.logo {
+    width: 10%;
+    height: 10%;
+    float: left;
+    border-radius: 50%;
+}
+
+p {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    font-family: monospace;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.imagesURL {
+    font-family: monospace;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.images {
+    width: 33.5%;
+    height: 33.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

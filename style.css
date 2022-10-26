@@ -1,0 +1,168 @@
+/* colors */
+:root {
+    --primary-color: #003866;
+    --primary-color-darker: #012f54;
+    --primary-color-lighter: #024f8e;
+    --primary-color-lightest: #0061af;
+    --content-item-color: #f5f5f5;
+    --image-border-color: #d2d2d2 /* variables to make color picking easier */
+}
+
+/* margin/padding reset */
+html, body, p, h1, h2, h3, h4, h5, h6, div {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: clip; /* i used this to disable sideways scrolling on my webside*/
+}
+
+/* main styles */
+
+* { /* Font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    top: 0;
+    height: 50px;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-content {
+    width: 60vw;
+}
+
+
+/* regular menu items */
+
+.menutitle { /* my website title */
+    background-color: var(--primary-color);
+    color:white;
+    cursor: default;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.menubtn { /* menu buttons */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.menubtn:hover {/* menu buttons change color */
+    background-color: var(--primary-color-darker);
+}
+
+/* dropdown menu */
+.dropbtn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color-lighter);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px; 
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary-color-lightest);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--primary-color-darker);
+}
+
+/* content styles*/
+
+.content-item {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--content-item-color);
+}
+
+.content-item h1 { /* Title of content */
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.content-item h2 { /* Subtitle of content */
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.content-item p { /* text of content */
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.content-item b {
+    font-weight: 550;
+}
+
+.content-image {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.content-image img {
+    flex-shrink: 0;
+    width: 750px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content-item .content-date {
+    font-weight: 250;
+    font-size: 13px;
+    text-align: right;
+}

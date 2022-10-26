@@ -1,0 +1,88 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 500px;
+    width: 250px;
+
+    border: 1px solid black;
+    border-radius: 25px;
+
+    box-shadow: 5px 5px 10px black;
+
+    background-color: #1e1e61;
+}
+
+.screen {
+    width: 200px;
+    height: 75px;
+
+    margin: 20px 25px;
+
+    background-color: #7d8c73;
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black inset;
+}
+
+.screen p {
+    text-align: right;
+
+    font-size: 28px;
+
+    padding: 0 5px;
+
+    color: #31372c;
+}
+
+.screen #screen-text-error {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+
+    padding: 55px 0 0 5px;
+
+    user-select: none;
+}
+
+.keypad {
+    display: grid;
+
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 35px 35px 57.5px 57.5px 57.5px 57.5px;
+    
+    width: 200px;
+    height: 300px;
+
+    margin: 60px 25px;
+
+    border: 1px solid #ffffff00;
+    background-color: #ffffff00;
+}
+
+.keypad button {
+    font-size: 20px;
+}
+
+.keypad .currency {
+    font-size: 16px;
+
+}
+
+.keypad .currency span {
+    font-variant: small-caps;
+}
